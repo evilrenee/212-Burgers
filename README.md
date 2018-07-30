@@ -36,6 +36,13 @@ Shows package commands
 
 # RUNNING Flask
 
+#### export/set
+In windows, export is 'set', whereas it is 'export' in mac.
+
+#### install flask
+
+pip install flask
+
 #### run flask
 
 cd (to directory)  
@@ -44,8 +51,31 @@ set FLASK_APP=run.py
 set FLASK_DEBUG=1  
 flask run
 
-(*once flask is installed*)
+# SQL Lite
 
+#### sqlite ____.db
 
-#### export/set
-In windows, export is 'set', whereas it is 'export' in mac.
+creates a database  
+*"sqlite menu.db"*
+
+#### dot commands
+.tables *(shows tables)*
+
+.headers on  
+.mode column  
+.width 5 30 10
+
+#### creating tables
+CREATE TABLE burgers (  
+id INTEGER PRIMARY KEY  
+burger TEXT  
+price FLOAT );
+
+INSERT INTO burgers(burger, price) VALUES ('Classic Burger', 4.99);
+
+#### DROP TABLE
+removes table
+
+#### SELECT * FROM
+
+#### UPDATE SET WHERE
