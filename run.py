@@ -1,11 +1,7 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return('<h1>212 Burgers</h1>')
-
-@app.route('/contact')
-def contact():
-    return('me@gmail.com')
+    return render_template('index.html', disclaimer='may contain traces of nuts')
